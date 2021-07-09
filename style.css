@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Molle:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&family=Open+Sans:wght@300&family=Otomanopee+One&display=swap');
+
+html, body {
+    overflow: hidden;
+  }
+
+.starsWelcome {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.starsBody {
+    cursor: default;
+}
+
+
+section {
+    cursor: default;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    height: 100vh;
+    background: #000;
+    background-position-x: center;
+    background-size: 0px;
+}
+
+.spanStars {
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+                0 0 0 8px rgba(255,255,255,0.1),
+                0 0 20px rgba(255,255,255,1);
+    animation: animateStar 3s linear infinite;
+}
+
+@keyframes animateStar {
+    0% {transform: rotate(315deg) translateX(-0);
+        opacity: 1;}
+    70% {opacity: 1;}
+    100% {transform: rotate(315deg) translateX(-75vh);
+        opacity: 0;}
+}
+
+.spanStars:nth-child(1)
+{
+    top: -4px;
+    right: -4px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.spanStars:nth-child(2)
+{
+    top: -4px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.1s;
+    animation-duration: 3s;
+}
+.spanStars:nth-child(3)
+{
+    top: 30px;
+    right: -4px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+.spanStars:nth-child(4)
+{
+    top: -4px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.spanStars:nth-child(5)
+{
+    top: -4px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 2.5s;
+}
+.spanStars:nth-child(6)
+{
+    top: -4px;
+    right: 600px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 3s;
+}
+.spanStars:nth-child(7)
+{
+    top: 300px;
+    right: -4px;
+    left: initial;
+    animation-delay: 0.3s;
+    animation-duration: 1.75s;
+}
+.spanStars:nth-child(8)
+{
+    top: -4px;
+    right: 700px;
+    left: initial;
+    animation-delay: 0.9s;
+    animation-duration: 1.25s;
+}
+.spanStars:nth-child(9)
+{
+    top: -4px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.spanStars:nth-child(10)
+{
+    top: -4px;
+    right: 450px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 2.25s;
+}
+
+.spanStars::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+
+.bodyGlowing {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #25292e;
+    overflow: hidden;
+}
+
+.lenguageBody {
+    display: flex;
+}
+
+.lenguage {
+    cursor: pointer;
+    margin: 5px 0 0 0;
+    padding-top: 50px;
+    height: 10px;
+    width: 100px;
+    color: #fff;
+}
+
+.lenguage li {
+    list-style: none;
+}
+
+.anchor1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.ancor1 a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.ancor1 a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.anchor2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ancor2 a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.ancor2 a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.glowing {
+    position: relative;
+    min-width: 50vw;
+    height: 100vh;
+    margin: -150px;
+    transform-origin: right;
+    animation: colorChange 5s linear infinite;
+}
+
+.glowing:nth-child(even){
+    transform-origin: left;
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.glowing span {
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+.glowing span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1):before {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 20px rgba(255,255,255,1),
+                0 0 40px rgba(255,255,255,1),
+                0 0 60px rgba(255,255,255,1),
+                0 0 80px rgba(255,255,255,1),
+                0 0 0 8px rgba(255,255,255,.1);
+}
+
+.glowing span:nth-child(3n + 2):before {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 20px rgba(255,255,255,1),
+                0 0 40px rgba(255,255,255,1),
+                0 0 60px rgba(255,255,255,1),
+                0 0 80px rgba(255,255,255,1),
+                0 0 0 8px rgba(255,255,255,.1);
+}
+
+.glowing span:nth-child(3n + 3):before {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 20px rgba(255,255,255,1),
+                0 0 40px rgba(255,255,255,1),
+                0 0 60px rgba(255,255,255,1),
+                0 0 80px rgba(255,255,255,1),
+                0 0 0 8px rgba(255,255,255,.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+    animation: movingGlow 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+    animation: movingGlow-reverse 3s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+    animation: movingGlow 8s alternate infinite;
+}
+
+@keyframes movingGlow {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes movingGlow-reverse {
+    0% {transform: rotate(360deg)}
+    100% {transform: rotate(0deg)}
+}
+
+#welcome {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.start1 span{
+    cursor: default;
+}
+
+.start1 {
+    cursor: default;
+    font-size: 12vw;
+    font-weight: 500;
+    color: white;
+    letter-spacing:5px;
+    cursor: pointer;
+    font-family: 'Otomanopee One', sans-serif;
+    animation: start1 ease-in-out 2s;
+    animation-iteration-count: 2;
+    animation-play-state: initial;
+}
+
+@keyframes start1 {
+    0% {text-shadow: 0 0 0px white}
+    1% {text-shadow: 0 0 1px #FC6D6D}
+    50% {text-shadow: 0 0 50px #FC6D6D}
+    99% {text-shadow: 0 0 1px #FC6D6D}
+    100% {text-shadow: 0 0 0px white}
+}
+
+.navBarFont {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#name {
+    cursor: default;
+    margin-left: 30px;
+}
+
+#about li {
+    list-style: none;
+}
+#programingList li {
+    list-style: none;
+}
+
+.guitar {  
+    height: 40vmin;
+    width: 40vmin;
+}
+
+.programingList {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.programingList li {
+    margin: 10px;
+}
+
+/* .tec {
+    height: 70px;
+    width: 302px;
+} */
+
+
+.boot {
+    margin-top: 10px;
+}
+
+.programingSection {
+    display:flex;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoContainer {
+    cursor: default;
+    margin-top: 3rem;
+}
+
+.info {
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+}
+
+.welcome1 {
+    display: flex;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    justify-content: center;
+    animation-name: welcome1;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+#hello {
+    display: flex;
+    cursor: default;
+}
+
+#hhh, #hho, #hhl, #hha, #hhcoma, #hhs, #hho2, #hhy, #hha2, #hhg, #hhu, #hhs2, #hhexcla {
+ font-size: 4vw;
+}
+
+#hhl, #hha, #hhcoma, #hhs, #hho2, #hhy, #hha2, #hhg {
+    border-bottom: 2px solid #FFF;
+}
+
+#hhcoma {
+    padding-right: 1.5vw;
+}
+
+#hhy {
+    padding-right: 1vw;
+}
+
+@keyframes welcome1 {
+ 0% {visibility: hidden;}
+}
+
+.whoImContainer {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+
+.whoIm {
+    display: inline-flex;
+}
+
+.whoIm .static-txt {
+    font-size: 60px;
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+}
+
+.whoIm .dynamic-txts {
+    margin-left: 0px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+
+.dynamic-txts li {
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 4.5s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -270px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+/* .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #25292e;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5s steps(14) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0px -35px 0px 35px;
+    }
+} */
+
+#home {
+    text-align: center;
+    color: white;
+    /* background-color: #343A40; */
+    background-color: #6C757D;
+}
+
+#about {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background: #25292e;
+}
+
+#contact {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding-left: 50px;
+}
+
+.colContact {
+    background-color: #6C757D;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.whatsapp, .linkedin, .github {
+    margin: 30px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer h1 {
+    font-weight: 600;
+}

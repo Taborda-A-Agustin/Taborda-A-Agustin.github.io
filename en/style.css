@@ -148,6 +148,10 @@ section {
     background: linear-gradient(90deg,#fff,transparent);
 }
 
+.navMargin {
+    padding-right: 20px;
+}
+
 .bodyGlowing {
     position: absolute;
     display: flex;
@@ -445,59 +449,29 @@ section {
     display: inline-flex;
 }
 
-.whoIm .static-txt {
+.static-txt {
+    position: static;
     font-size: 60px;
     color: #FFF;
-    font-weight: 400;
     font-family: 'Inconsolata', monospace;
 }
 
 .whoIm .dynamic-txts {
     margin-left: 0px;
-    height: 90px;
-    line-height: 90px;
     overflow: hidden;
     font-family: 'Inconsolata', monospace;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
-.dynamic-txts li {
-    color: #FC6D6D;
+.dynamic-texts li {
     list-style: none;
+}
+
+#dynamic-words {
+    color: #FC6D6D;
     font-size: 60px;
-    font-weight: 700;
-    position: relative;
     top: 0;
-    animation: slide 4.5s steps(3) infinite;
 }
-
-@keyframes slide {
-    100% {
-        top: -270px;
-    }
-}
-
-.dynamic-txts li span {
-    position: relative;
-}
-
-/* .dynamic-txts li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background: #25292e;
-    border-left: 2px solid #FC6D6D;
-    animation: typing 1.5s steps(14) infinite;
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0px -35px 0px 35px;
-    }
-} */
 
 #home {
     text-align: center;

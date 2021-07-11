@@ -31,6 +31,33 @@ $(function(){
 
 let all = document.getElementById("all");
 
+var dynamicWordsToAnimate = ["Desarrollador.", "Programador.","Freelancer."];
+var startReversAnimationAfter = 500;
+
+function reverseAnimation(dynamicWIndex){
+  var i = dynamicWordsToAnimate[dynamicWIndex].length -1, delay = 0;
+  for (; i >= 0 ; i--, delay++) {
+    let string = dynamicWordsToAnimate[dynamicWIndex].substr(0, i);
+    setTimeout('document.getElementById("dynamic-words").innerHTML = \'' + string + '\';', 100 * delay);
+  }
+  
+   setTimeout(function(){ animateWords(dynamicWIndex + 1)}, 100 * delay + startReversAnimationAfter);
+}
+function animateWords(dynamicWIndex){
+  var i =0;
+  if(dynamicWIndex ==  dynamicWordsToAnimate.length){
+    dynamicWIndex = 0;
+  }
+  for (; i < dynamicWordsToAnimate[dynamicWIndex].length; i++) {
+    let string = dynamicWordsToAnimate[dynamicWIndex][i]
+    setTimeout('document.getElementById("dynamic-words").innerHTML += \'' + string + '\';', 100 * i);
+  }
+ 
+ setTimeout(function(){ reverseAnimation(dynamicWIndex)}, 100 * i + startReversAnimationAfter);
+}
+
+animateWords(0)
+
 let homeNav = document.querySelector("#homeNav");
 let home = document.querySelector ("#home");
 let aboutNav = document.querySelector ("#aboutNav");
@@ -62,6 +89,18 @@ github.addEventListener("click", goGithub);
 
 let whatsapp = document.querySelector(".whatsapp");
 whatsapp.addEventListener("click", goWhatsapp);
+
+function goLinkedin (e) {
+    window.open("https://www.linkedin.com/in/albertoagustintaborda/")
+};
+
+function goGithub (e) {
+    window.open("https://github.com/Taborda-A-Agustin")
+};
+
+function goWhatsapp (e) {
+    window.open("https://wa.me/+5493442641913")
+};
 
 function htmlbyn () {
     let image = document.getElementById('html');
@@ -133,17 +172,6 @@ function jquerycolor () {
     }
 }
 
-function goLinkedin (e) {
-    window.open("https://www.linkedin.com/in/albertoagustintaborda/")
-};
-
-function goGithub (e) {
-    window.open("https://github.com/aguskapool")
-};
-
-function goWhatsapp (e) {
-    window.open("https://wa.me/+5493442641913")
-};
 
 let hhh = document.getElementById ("hhh");
 hhh.addEventListener ("mousemove", mohhh);
@@ -319,6 +347,7 @@ function mlhhexcla (e) {
     hhexcla.style.color = "#FFFFFF";
     hhexcla.style.fontSize= "4vw";
 };
+
 
 
 

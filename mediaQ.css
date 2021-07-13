@@ -1,0 +1,88 @@
+@media (min-width: 1401px) {
+    .info {
+        font-size: 32px;
+    }
+    .whoImContainer {
+        font-size: 60px;
+    }
+    #hello {
+        font-size: 76.8px;
+    }
+    .programingList{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .info {
+        font-size: 29px;
+    }
+    .whoImContainer {
+        font-size: 52px;
+    }
+    #hello {
+        font-size: 68.8px;
+    }
+    .programingList{
+        font-size: 30.5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .info {
+        font-size: 26px;
+    }
+    .whoImContainer {
+        font-size: 44px;
+    }
+    #hello {
+        font-size: 60.8px;
+    }
+    .programingList{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .info {
+        font-size: 23px;
+    }
+    .whoImContainer {
+        font-size: 36px;
+    }
+    #hello {
+        font-size: 52.8px;
+    }
+    .programingList{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        font-size: 20px;
+    }
+    .whoImContainer {
+        font-size: 28px;
+    }
+    #hello {
+        font-size: 44.8px;
+    }
+    .programingList{
+        font-size: 24px;
+    }
+}
+@media (max-width: 576px) {
+    .info {
+        font-size: 17px;
+    }
+    .whoImContainer {
+        font-size: 23px;
+    }
+    #hello {
+        font-size: 36.8px;
+    }
+    .programingList{
+        font-size: 24px;
+    }
+}

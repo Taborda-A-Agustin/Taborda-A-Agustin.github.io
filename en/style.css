@@ -358,7 +358,6 @@ section {
 
 .programingList {
     margin-top: 30px;
-    font-size: 2rem;
 }
 
 .programingList li {
@@ -392,7 +391,6 @@ section {
 .info {
     margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3vw;
 }
 
 .welcome1 {
@@ -412,9 +410,6 @@ section {
     cursor: default;
 }
 
-#hhh, #hhe, #hhl, #hhl2, #hho,#hhcoma, #hhi, #hha, #hhm, #hha2, #hhg, #hhu, #hhs, #hhexcla {
- font-size: 4vw;
-}
 
 #hhl, #hhl2, #hho, #hhcoma, #hhi, #hha, #hhm, #hha2, #hhg {
     border-bottom: 2px solid #FFF;
@@ -451,7 +446,6 @@ section {
 
 .static-txt {
     position: static;
-    font-size: 60px;
     color: #FFF;
     font-family: 'Inconsolata', monospace;
 }
@@ -468,8 +462,7 @@ section {
 }
 
 #dynamic-words {
-    color: #FC6D6D;
-    font-size: 60px;
+    color: #e94747;
     top: 0;
 }
 

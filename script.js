@@ -172,7 +172,6 @@ function jquerycolor () {
     }
 }
 
-
 let hhh = document.getElementById ("hhh");
 hhh.addEventListener ("mousemove", mohhh);
 hhh.addEventListener ("mouseleave", mlhhh);
@@ -215,137 +214,111 @@ hhexcla.addEventListener ("mouseleave", mlhhexcla);
 
 function mohhh (e) {
     hhh.style.color = "#000000";
-    hhh.style.fontSize = "4.7vw";
 };
 function mlhhh (e) {
     hhh.style.color = "#FFFFFF";
-    hhh.style.fontSize= "4vw";
 };
 function mohho (e) {
     hho.style.color = "#000000";
-    hho.style.fontSize = "4.7vw";
 };
 function mlhho (e) {
     hho.style.color = "#FFFFFF";
-    hho.style.fontSize= "4vw";
 };
 function mohhl (e) {
     hhl.style.color = "#000000";
-    hhl.style.fontSize = "4.7vw";
     hhl.style.borderBottom = "2px solid #000";
 };
 function mlhhl (e) {
     hhl.style.color = "#FFFFFF";
-    hhl.style.fontSize= "4vw";
     hhl.style.borderBottom = "2px solid #FFFFFF";
 };
 function mohha (e) {
     hha.style.color = "#000000";
-    hha.style.fontSize = "4.7vw";
     hha.style.borderBottom = "2px solid #000";
 };
 function mlhha (e) {
     hha.style.color = "#FFFFFF";
-    hha.style.fontSize= "4vw";
     hha.style.borderBottom = "2px solid #FFFFFF";
 };
 function mohhcoma (e) {
     hhcoma.style.color = "#000000";
-    hhcoma.style.fontSize = "4.7vw";
     hhcoma.style.borderBottom = "2px solid #000";
 };
 function mlhhcoma (e) {
     hhcoma.style.color = "#FFFFFF";
-    hhcoma.style.fontSize= "4vw";
     hhcoma.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohhs (e) {
     hhs.style.color = "#000000";
-    hhs.style.fontSize = "4.7vw";
     hhs.style.borderBottom = "2px solid #000";
 };
 function mlhhs (e) {
     hhs.style.color = "#FFFFFF";
-    hhs.style.fontSize= "4vw";
     hhs.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohho2 (e) {
     hho2.style.color = "#000000";
-    hho2.style.fontSize = "4.7vw";
     hho2.style.borderBottom = "2px solid #000";
 };
 function mlhho2 (e) {
     hho2.style.color = "#FFFFFF";
-    hho2.style.fontSize= "4vw";
     hho2.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohhy (e) {
     hhy.style.color = "#000000";
-    hhy.style.fontSize = "4.7vw";
     hhy.style.borderBottom = "2px solid #000";
 };
 
 function mlhhy (e) {
     hhy.style.color = "#FFFFFF";
-    hhy.style.fontSize= "4vw";
     hhy.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohha2 (e) {
     hha2.style.color = "#000000";
-    hha2.style.fontSize = "4.7vw";
     hha2.style.borderBottom = "2px solid #000";
 };
 
 function mlhha2 (e) {
     hha2.style.color = "#FFFFFF";
-    hha2.style.fontSize= "4vw";
     hha2.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohhg (e) {
     hhg.style.color = "#000000";
-    hhg.style.fontSize = "4.7vw";
     hhg.style.borderBottom = "2px solid #000";
 };
 
 function mlhhg (e) {
     hhg.style.color = "#FFFFFF";
-    hhg.style.fontSize= "4vw";
     hhg.style.borderBottom = "2px solid #FFFFFF";
 };
 
 function mohhu (e) {
     hhu.style.color = "#000000";
-    hhu.style.fontSize = "4.7vw";
 };
 
 function mlhhu (e) {
     hhu.style.color = "#FFFFFF";
-    hhu.style.fontSize= "4vw";
 };
 
 function mohhs2 (e) {
     hhs2.style.color = "#000000";
-    hhs2.style.fontSize = "4.7vw";
 };
 
 function mlhhs2 (e) {
     hhs2.style.color = "#FFFFFF";
-    hhs2.style.fontSize= "4vw";
 };
 
 function mohhexcla (e) {
     hhexcla.style.color = "#000000";
-    hhexcla.style.fontSize = "4.7vw";
 };
 
 function mlhhexcla (e) {
     hhexcla.style.color = "#FFFFFF";
-    hhexcla.style.fontSize= "4vw";
 };
 
 

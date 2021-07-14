@@ -329,9 +329,9 @@ section {
 
 @keyframes start1 {
     0% {text-shadow: 0 0 0px white}
-    1% {text-shadow: 0 0 1px #FC6D6D}
-    50% {text-shadow: 0 0 50px #FC6D6D}
-    99% {text-shadow: 0 0 1px #FC6D6D}
+    1% {text-shadow: 0 0 1px #ED3237}
+    50% {text-shadow: 0 0 50px #ED3237}
+    99% {text-shadow: 0 0 1px #ED3237}
     100% {text-shadow: 0 0 0px white}
 }
 
@@ -451,7 +451,7 @@ section {
 }
 
 #dynamic-words {
-    color: #e94747;
+    color: #ED3237;
     top: 0;
 }
 
@@ -478,14 +478,6 @@ section {
     padding-left: 50px;
 }
 
-.colContact {
-    background-color: #6C757D;
-}
-
-.right {
-    margin-right: 20px;
-}
-
 .whatsapp, .linkedin, .github {
     margin: 30px;
     cursor: pointer;
@@ -495,6 +487,27 @@ section {
     display: flex;
 }
 
-.footer h1 {
-    font-weight: 600;
+.footer a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.footer .linkedin:hover {
+    transform: scale(1.23, 1.23);
+    color: #ED3237;
+  }
+  
+.footer .github:hover {
+    transform: scale(1.23, 1.23);
+    color: #ED3237;
+  }
+  
+.footer .whatsapp:hover {
+    transform: scale(1.23, 1.23);
+    color: #ED3237;
+  }
+
+.right {
+    margin-right: 20px;
 }

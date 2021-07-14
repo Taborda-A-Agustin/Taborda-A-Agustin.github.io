@@ -11,6 +11,9 @@
     .programingList{
         font-size: 34px;
     }
+    .whatsapp, .github, .linkedin {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -25,6 +28,9 @@
     }
     .programingList{
         font-size: 30.5px;
+    }
+    .whatsapp, .github, .linkedin {
+        font-size: 32px;
     }
 }
 
@@ -41,6 +47,9 @@
     .programingList{
         font-size: 30px;
     }
+    .whatsapp, .github, .linkedin {
+        font-size: 29px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -54,6 +63,9 @@
         font-size: 52.8px;
     }
     .programingList{
+        font-size: 26px;
+    }
+    .whatsapp, .github, .linkedin {
         font-size: 26px;
     }
 }
@@ -71,6 +83,9 @@
     .programingList{
         font-size: 24px;
     }
+    .whatsapp, .github, .linkedin {
+        font-size: 26px;
+    }
 }
 @media (max-width: 576px) {
     .info {
@@ -84,5 +99,8 @@
     }
     .programingList{
         font-size: 24px;
+    }
+    .whatsapp, .github, .linkedin {
+        font-size: 23px;
     }
 }
